@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +9,7 @@ import { GithubSearchFormComponent } from './github-search-form/github-search-fo
 import { GithubUsernameComponent } from './github-username/github-username.component';
 import { GithubRepositoriesComponent } from './github-repositories/github-repositories.component';
 import { UserNotFoundComponent } from './user-not-found/user-not-found.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { UserNotFoundComponent } from './user-not-found/user-not-found.component
     GithubSearchFormComponent,
     GithubUsernameComponent,
     GithubRepositoriesComponent,
-    UserNotFoundComponent
+    UserNotFoundComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
