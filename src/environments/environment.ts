@@ -3,9 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-  BASEURL: 'https://api.github.com'
-  gitAccessToken : "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";
+  production: false,
+  BASEURL: 'https://api.github.com',
+  gitAccessToken: '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'
 };
 
 /*
