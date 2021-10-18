@@ -1,7 +1,7 @@
 # Github-Search
 
 ## Description.
-This is a web application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.  
+This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories.
 
 ## Author.
 [Denis Leparteleg] :https://github.com/Denis-leparteleg
