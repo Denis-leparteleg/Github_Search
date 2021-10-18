@@ -1,0 +1,41 @@
+<div class="container m-3">
+
+  <app-search (emitSearch)="searchGit($event)"></app-search>
+  <br>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="text-center p-1 rounded" style="background-color: rgb(255, 255, 255);">Github Repositories</h2>
+
+      <div *ngFor='let repo of Repos'>
+        <div class="card m-3" style="background-color: rgb(230, 253, 248);">
+          <div class="card-body">
+            <div class="text-center">
+              <h2 class="text-info">{{repo.name}}</h2>
+            </div>
+            <div class="card-text">{{repo.description}}</div>
+            <div class="card-footer">Created on: {{repo.created_at | date}}, {{repo.created_at|time}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h2 class="text-center p-1 rounded" style="background-color: rgb(255, 255, 255);">Github User</h2>
+      <div>
+        <div class="text-center">
+          <img src="{{Users.avatar_url}}" alt="" class="img-fluid rounded-circle">
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" style="background-color: rgb(230, 253, 248);">Username: {{Users.login}}</li>
+          <li class="list-group-item" style="background-color: rgb(230, 253, 248);">Followers: {{Users.followers}}</li>
+          <li class="list-group-item" style="background-color: rgb(230, 253, 248);">Following: {{Users.following}}</li>
+          <li class="list-group-item" style="background-color: rgb(230, 253, 248);">Public Repositories: {{Users.public_repos}}</li>
+          <li class="list-group-item" style="background-color: rgb(230, 253, 248);">Location: {{Users.location}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

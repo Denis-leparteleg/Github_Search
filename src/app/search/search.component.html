@@ -1,0 +1,7 @@
+<div class="container w-50 mt-4">
+    <form (ngSubmit)='search($event)' #userForm='ngForm'>
+      <div class="input-group">
+        <input type="search" [(ngModel)]="username" name="searchTerm" class="form-control rounded" aria-label="Search" aria-describedby="search-addon" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search username ..." required/>
+      </div>
+    </form>
+</div>
