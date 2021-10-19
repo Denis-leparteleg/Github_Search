@@ -1,7 +1,11 @@
-.navbar-spacing{
+.navbar_spacing{
     flex: 1 1 auto;
 }
-
+h2 {
+    float: right;
+    margin-left: 40px;
+    padding-right: 40px;
+}
 .nav_background{
     background-color: rgb(155, 17, 160);
 }

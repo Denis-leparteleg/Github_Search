@@ -21,11 +21,15 @@ import { ShowDirective } from './show.directive';
     UserComponent,
     TimePipe,
     SearchComponent,
-    ShowDirective
+    ShowDirective,
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
