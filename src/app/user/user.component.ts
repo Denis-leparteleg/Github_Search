@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/user';
 import { Repo } from 'src/app/repo';
+import { GithubService } from '../github.service';
+
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -10,8 +13,8 @@ import { Repo } from 'src/app/repo';
 export class UserComponent implements OnInit {
   Users!: User;
   Repos: Repo[] = [];
-  userHttpService: any;
-  constructor() {}
+  // userHttpService: any;
+  constructor(public userHttpService:GithubService) {}
 
   ngOnInit() {
     this.searchGit('Denis-leparteleg');

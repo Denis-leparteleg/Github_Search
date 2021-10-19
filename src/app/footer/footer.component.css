@@ -1,9 +1,9 @@
 .footer_background{
-    background-color: rgb(155, 17, 160);
+    background-color: rgb(247, 211, 11);
 }
 
 .footer_hover :hover{
-    color: black;
+    color: rgb(16, 31, 243);
 }
 *{
     margin-top: 10px;

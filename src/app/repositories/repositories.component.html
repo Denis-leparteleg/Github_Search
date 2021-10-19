@@ -2,13 +2,13 @@
   <br><br> <br> <br>
   <div class="row">
     <div class="col-md-6" *ngFor='let repo of Repos'>
-      <div class="card m-3" style="background-color: rgb(230, 253, 248);">
+      <div class="card m-3" style="background-color:dark;">
         <div class="card-body">
           <div class="text-center">
             <h2 class="text-info">{{repo.name}}</h2>
-            <!-- <button class="btn btn-lg bg-primary text-light card-title">{{repo.name}}</button> -->
+            
           </div>
-          <!-- <div class="card-title">{{repo.name}}</div> -->
+          
           <div class="card-text">{{repo.description}}</div>
           <div class="card-footer">Created on:{{repo.created_at}}</div>
         </div>
